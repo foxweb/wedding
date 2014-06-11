@@ -1,8 +1,19 @@
 /* CSS Document */
-body{font-family:"Lucida Grande","Trebuchet MS",Arial,Helvetica,sans-serif;font-size:10pt;color:#333333;background-color:#FFFFFF;margin: 50px auto;max-width:800px;}
-h1{font-size:16pt;border-bottom:1px dashed #CCCCCC;}
+@import url(http://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Bad+Script&subset=latin,cyrillic);
+
+body{font-family:"EB Garamond",serif;font-size:20pt;color:#333333;background-color:#FFFFFF;margin: 50px auto;max-width:800px;}
+#main{width:800px;margin:0 auto;}
+#main div{text-align:center;margin-top:1em;}
+h1{font-family:"Bad Script",cursive;font-size:36pt;text-align:center;color:#444444;text-shadow:1px 1px 0px #cccccc;margin-top:1em;}
+
+#calm{text-align:center;margin: 0 auto;}
+#flickr{text-align:center;margin:0 auto;}
+#map{margin:1em auto;}
+#hashtag{font-family:"EB Garamond",serif;font-size:36pt;font-weight:bold;color:red;background-color:#FFFFFF;margin: 50px auto;}
+
 h1 sup {font-size:10pt;font-weight:normal;font-style:italic;color:#005F82;}
-ul{list-style-image:url(/images/bullet.gif);}
+ul{list-style-image:url(/img/bullet.gif);text-align:left;}
 a:link,a:visited{color:#CC3333;background-color:inherit;font-weight:bold;}
 a:hover{text-decoration:none;color:#FF0000;background-color:inherit;}
 #counter{font-size:80%;font-weight:bold;color:#666666;background-color:inherit;text-align:center;margin-top:20px;}
