@@ -14,14 +14,49 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/application.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script>
+          var end = new Date(2014, 7, 9, 15, 30);
+          var _second = 1000;
+          var _minute = _second * 60;
+          var _hour = _minute * 60;
+          var _day = _hour * 24;
+          var timer;
+
+          function showRemaining() {
+              var now = new Date();
+              var distance = end - now;
+              if (distance < 0) {
+
+                  clearInterval(timer);
+                  document.getElementById('countdown').innerHTML = 'ничего!';
+
+                  return;
+              }
+              var days = Math.floor(distance / _day);
+              var hours = Math.floor((distance % _day) / _hour);
+              var minutes = Math.floor((distance % _hour) / _minute);
+              var seconds = Math.floor((distance % _minute) / _second);
+
+              document.getElementById('countdown').innerHTML = days + ' дней ';
+              document.getElementById('countdown').innerHTML += hours + ' часов ';
+              document.getElementById('countdown').innerHTML += minutes + ' минут ';
+              document.getElementById('countdown').innerHTML += seconds + ' секунд ';
+          }
+
+          timer = setInterval(showRemaining, 1000);
+        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div id="main">
-          <div id="calm"><img src="/img/keep-calm-and-enjoy-the-wedding-64.png" alt="KEEP CALM and ENJOY THE WEDDING!" /></div>
           <h1>Свадьба Лёши Курепина и Кати<br/>(пока ещё Дудиной)</h1>
+          <div>До свадьбы осталось<br/>
+            <span id="countdown"></span>
+          </div>
+          <div id="calm"><img src="/img/keep-calm-and-enjoy-the-wedding-64.png" alt="KEEP CALM and ENJOY THE WEDDING!" /></div>
+          
           <div>Дорогие друзья, гости, родственники и все, кто получили приглашение. Эту страничку мы сделали специально для того, чтобы тут можно было найти ответы на все самые часто задаваемые вопросы.<br/>
             К тому же, свадебный сайт — это стильно, модно, молодёжно!<br/>
             После свадьбы мы соберём здесь все фотографии,<br/>видеоролики и рассказы очевидцев.<br/>Будет интересно.

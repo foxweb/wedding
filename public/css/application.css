@@ -8,6 +8,7 @@ body{font-family:"EB Garamond",serif;font-size:20pt;color:#333333;background-col
 h1{font-family:"Bad Script",cursive;font-size:36pt;text-align:center;color:#444444;text-shadow:1px 1px 0px #cccccc;margin-top:1em;}
 
 #calm{text-align:center;margin: 0 auto;}
+#countdown{font-size:36pt;text-align:center;color:#444444;text-shadow:1px 1px 0px #cccccc;}
 #flickr{text-align:center;margin:0 auto;}
 #map{margin:1em auto;}
 #hashtag{font-family:"EB Garamond",serif;font-size:36pt;font-weight:bold;color:red;background-color:#FFFFFF;margin: 50px auto;}
