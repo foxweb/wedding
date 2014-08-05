@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>KEEP CALM and ENJOY THE WEDDING!</title>
+        <meta name="description" content="Свадебный сайт Лёши Курепина и Кати (пока ещё Дудиной). Картинки, приколы, музыка, видео, юмор, жесть, mp3 скачать без смс, без регистрации.">
+        
+        <meta property="og:title" content="Свадебный сайт Лёши Курепина и Кати (пока ещё Дудиной)" />
+        <meta property="og:locale" content="ru_RU" />
+        <meta property="og:description" content="Картинки, приколы, музыка, видео, юмор, жесть, mp3 скачать без смс, без регистрации.">
+        <meta property="og:image" content="http://wedding.kurepin.com/img/keep-calm-and-enjoy-the-wedding-64.png" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/favicon.ico" rel="shortcut icon">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/application.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body id="fun">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</span>
+        <![endif]-->
+        <table id="funtable" cols="6" width="100%">
+          <tbody>
+            <tr>
+              <td width="16.66%">
+                <div><span>1</span></div>
+              </td>
+              <td width="16.66%">
+                <div><span>2</span></div>
+              </td>
+              <td width="16.66%">
+                <div><span>3</span></div>
+              </td>
+              <td width="16.66%">
+                <div><span>4</span></div>
+              </td>
+              <td width="16.66%">
+                <div><span>5</span></div>
+              </td>
+              <td width="16.66%">
+                <div><span>6</span></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div><span>7</span></div>
+              </td>
+              <td>
+                <div><span>8</span></div>
+              </td>
+              <td>
+                <div><span>9</span></div>
+              </td>
+              <td>
+                <div><span>10</span></div>
+              </td>
+              <td>
+                <div><span>11</span></div>
+              </td>
+              <td>
+                <div><span>12</span></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div><span>13</span></div>
+              </td>
+              <td>
+                <div><span>14</span></div>
+              </td>
+              <td>
+                <div><span>15</span></div>
+              </td>
+              <td>
+                <div><span>16</span></div>
+              </td>
+              <td>
+                <div><span>17</span></div>
+              </td>
+              <td>
+                <div><span>18</span></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div><span>19</span></div>
+              </td>
+              <td>
+                <div><span>20</span></div>
+              </td>
+              <td>
+                <div><span>21</span></div>
+              </td>
+              <td>
+                <div><span>22</span></div>
+              </td>
+              <td>
+                <div><span>23</span></div>
+              </td>
+              <td>
+                <div><span>24</span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="guests">
+          <div><img src="" /><br/><p>&nbsp;</p></div>
+        </div>
+        <audio loop>
+          <source src="horse.ogg" type="audio/ogg">
+          <source src="horse.mp3" type="audio/mpeg">
+        </audio>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+          var guests = [
+            "Аноним",
+            "Андрей Мамзин",      // 1
+            "Маша Метельская",    // 2
+            "Андрей Журавлёв",    // 3
+            "Маша Куликова",      // 4
+            "Катя Сафронеева",    // 5
+            "Валера",             // 6
+            "Дима",               // 7
+            "Оля Анищенко",       // 8
+            "Даша Курепина",      // 9
+            "Юра",                // 10
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",   // 20
+            "",
+            "",
+            "",
+            "",   // 24
+            // ...
+          ];
+          
+          
+          $("#funtable div").click(function(e){
+            $(this).css("background-color","#bbada0");
+            var number = $(this).text();
+            var img_path = "/img/guests/" + number + ".jpg";
+            
+            // установка картинки и подписи
+            $("div#guests div p").text(guests[parseInt(number)])
+            $("div#guests div img").attr("src", img_path)
+            
+            // появление картинки
+            $("div#guests").css("opacity", "0");
+            $("div#guests").css("display","table");
+            $("div#guests").animate({ opacity: 1 }, 500);
+            
+            e.stopPropagation();
+          });
+          
+          $("div#guests").click(function(e){
+            $(this).css("display","none");
+            e.stopPropagation();
+          });
+        </script>
+    </body>
+</html>

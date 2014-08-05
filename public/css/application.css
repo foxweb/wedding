@@ -1,6 +1,7 @@
 /* CSS Document */
 @import url(http://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,cyrillic);
 @import url(http://fonts.googleapis.com/css?family=Bad+Script&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
 
 body{font-family:"EB Garamond",serif;font-size:20pt;color:#333333;background-color:#FFFFFF;margin: 50px auto;max-width:800px;}
 #main{width:800px;margin:0 auto;}
@@ -22,3 +23,75 @@ a:hover{text-decoration:none;color:#FF0000;background-color:inherit;}
 img{border:none;}
 #image{float:left;border:none;border:1px solid #CCCCCC;display:block;}
 #about{padding-left:135px;}
+
+/* fun.html */
+html{height: 100%; width:100%}
+body#fun{
+  background:#ffff99;
+  width:100%;
+  height:100%;
+  padding:0px 0px;
+  margin:0px 0px;
+  max-width:2048px;
+}
+table#funtable{
+  width:100%;
+  height:100%;
+  text-align:center;
+  border-collapse:collapse;
+  border:0px;
+  margin:0px;
+}
+#funtable tbody{
+  background-color:#bbada0;
+}
+#funtable td{
+  padding:10pt;
+}
+#funtable div{
+  height:100%;
+  width:100%;
+  text-align:center;
+  background:#eee4da;
+  border-radius:10px;
+  display: table;
+}
+#funtable span{
+  text-align:center;
+  vertical-align:middle;
+  display:table-cell;
+  color:#776e65;
+  font-family:"Montserrat", "Helvetica Neue", Arial, sans-serif;
+  font-size:72pt;
+}
+/* полноэкранный блок с фоткой гостя */
+#fun div#guests{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0, 0, 0, 0.8);
+  top:0;
+  display:none;
+}
+/* фото и имя гостя */
+#fun #guests div{
+  margin:10px auto;
+  text-align:center;
+  vertical-align:middle;
+  display:table-cell;
+}
+
+#fun #guests div img{
+  border:10pt solid #ffffff;
+  border-radius: 20px;
+  max-width: 100%;
+  height: 90%;
+  /*max-height: 100%;*/
+}
+#fun #guests div p{
+  font-size:32pt;
+  color:#ffffff;
+  padding:0pt;
+  margin:0;
+  text-shadow: 0px 0px 20px black;
+}
