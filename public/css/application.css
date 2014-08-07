@@ -55,6 +55,7 @@ table#funtable{
   background:#eee4da;
   border-radius:10px;
   display: table;
+  cursor:pointer;
 }
 #funtable span{
   text-align:center;
