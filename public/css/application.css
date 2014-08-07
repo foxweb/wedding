@@ -1,6 +1,7 @@
 /* CSS Document */
 @import url(http://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,cyrillic);
 @import url(http://fonts.googleapis.com/css?family=Bad+Script&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
 
 body{font-family:"EB Garamond",serif;font-size:20pt;color:#333333;background-color:#FFFFFF;margin: 50px auto;max-width:800px;}
 #main{width:800px;margin:0 auto;}
@@ -22,3 +23,88 @@ a:hover{text-decoration:none;color:#FF0000;background-color:inherit;}
 img{border:none;}
 #image{float:left;border:none;border:1px solid #CCCCCC;display:block;}
 #about{padding-left:135px;}
+
+/* fun.html */
+html{height: 100%; width:100%}
+body#fun{
+  background:#ffff99;
+  width:100%;
+  height:100%;
+  padding:0px 0px;
+  margin:0px 0px;
+  min-width:100%;
+}
+table#funtable{
+  width:100%;
+  height:100%;
+  text-align:center;
+  border-collapse:collapse;
+  border:0px;
+  margin:0px;
+}
+#funtable tbody{
+  background-color:#bbada0;
+}
+#funtable td{
+  padding:10pt;
+}
+#funtable div{
+  height:100%;
+  width:100%;
+  text-align:center;
+  background:#eee4da;
+  border-radius:10px;
+  display: table;
+  cursor:pointer;
+}
+#funtable span{
+  text-align:center;
+  vertical-align:middle;
+  display:table-cell;
+  color:#776e65;
+  font-family:"Montserrat", "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size:72pt;
+  font-weight:bold;
+}
+/* полноэкранный блок с фоткой гостя */
+#fun #guests{
+  position:fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  width:100%;
+  height:auto;
+  background:rgba(0, 0, 0, 0.8);
+  display:none;
+}
+/* фото и имя гостя */
+#fun #guests div{
+  margin:10px auto;
+  text-align:center;
+  vertical-align:middle;
+  display:table;
+}
+
+#fun #guests div {
+  height:100%;
+  max-height:100%;
+}
+
+#fun #guests img{
+  border:10pt solid #ffffff;
+  border-radius: 20px;
+  vertical-align: middle;
+  height:80%;
+  width:auto;
+  margin:auto;
+  display:block;
+}
+#fun #guests div p{
+  font-size:32pt;
+  color:#ffffff;
+  padding:0pt;
+  margin:0;
+  text-shadow: 0px 0px 20px black;
+  height:20%;
+}
