@@ -157,13 +157,13 @@
             var img_path = "/img/guests/" + number + ".jpg";
             
             // установка картинки и подписи
-            $("div#guests div p").text(guests[parseInt(number)])
-            $("div#guests div img").attr("src", img_path)
+            $("#guests div p").text(guests[parseInt(number)])
+            $("#guests div img").attr("src", img_path)
             
             // появление картинки
-            $("div#guests").css("opacity", "0");
-            $("div#guests").css("display","table");
-            $("div#guests").animate({ opacity: 1 }, 500);
+            $("#guests").css("opacity", "0");
+            $("#guests").css("display","block");
+            $("#guests").animate({ opacity: 1 }, 500);
             
             e.stopPropagation();
           });
