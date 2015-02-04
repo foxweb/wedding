@@ -30,14 +30,8 @@
 
           function showRemaining() {
               var now = new Date();
-              var distance = end - now;
-              if (distance < 0) {
-
-                  clearInterval(timer);
-                  document.getElementById('countdown').innerHTML = 'ничего!';
-
-                  return;
-              }
+              var distance = now - end;
+              
               var days = Math.floor(distance / _day);
               var hours = Math.floor((distance % _day) / _hour);
               var minutes = Math.floor((distance % _hour) / _minute);
@@ -57,10 +51,15 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div id="main">
-          <h1>Свадьба Лёши Курепина и Кати<br/>(пока ещё Дудиной)</h1>
-          <div>До свадьбы осталось<br/>
+          <h1>Свадьба Лёши Курепина и Кати<br/><strike>(пока ещё Дудиной)</strike></h1>
+          <div><strike>До свадьбы осталось</strike><br/>Мы женаты уже<br/>
             <span id="countdown"></span>
           </div>
+          
+          <div>
+            <a href="https://www.flickr.com/photos/foxwwweb/sets/72157645046757652/">Фотки</a> / <a href="http://www.enjoygram.com/tag/foxwwwed">Инстаграм</a>
+          </div>
+          
           <div id="calm"><img src="/img/keep-calm-and-enjoy-the-wedding-64.png" alt="KEEP CALM and ENJOY THE WEDDING!" /></div>
           
           <div>Дорогие друзья, гости, родственники и все, кто получили приглашение. Эту страничку мы сделали специально для того, чтобы тут можно было найти ответы на все самые часто задаваемые вопросы.<br/>
@@ -112,7 +111,7 @@
             Для этого мы придумали специальный свадебный хэш-тэг:
           </div>
           
-          <div id="hashtag">#foxwwwed</div>
+          <div id="hashtag"><a href="http://www.enjoygram.com/tag/foxwwwed">#foxwwwed</a></div>
           
           <div>
             По этому хэш-тэгу мы потом соберём все материалы в кучу и <strike>приложим к делу</strike>
