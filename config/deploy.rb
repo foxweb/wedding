@@ -7,13 +7,12 @@ set :repository, 'git@github.com:foxweb/wedding.git'
 set :branch, 'master'
 set :keep_releases, 5
 
-task :setup => :environment do
+task setup: :environment do
   # nothing
 end
 
-
-desc "Deploys the current version to the server."
-task :deploy => :environment do
+desc 'Deploys the current version to the server.'
+task deploy: :environment do
   deploy do
     invoke :'git:clone'
     invoke :'deploy:cleanup'
